@@ -1,0 +1,15 @@
+server:
+  port: 8888
+management: 
+  context-path: /admin
+  
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/angoa/config-repo
+          search-paths: dev
+          clone-on-start: true
