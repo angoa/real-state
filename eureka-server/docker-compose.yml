@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  eureka-server:
+    image: your-docker-repo/eureka-server:latest
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    environment:
+      - HOSTNAME=eureka-server
